@@ -1,6 +1,8 @@
 <script setup>
+import ShopNowBtn from '../ShopNowBtn.vue';
 
 </script>
+
 
 <template>
   <section class="flex justify-center ">
@@ -9,9 +11,7 @@
       <p>Pro.Beyond.</p>
       <p>IPhone 14 <span>Pro</span></p>
       <p>Created to change everything for the better. For everyone</p>
-      <button class="shop-now">
-        Shop Now
-      </button>
+      <ShopNowBtn  />
     </div>
     <div><img src="/src/assets/HomeAssets/Iphone Image.png" alt="" class=""></div>
     </div>
@@ -47,20 +47,6 @@
           font-size: 18px;
           font-weight: 500;
           line-height: 24px;
-        }
-        .shop-now{
-          transition: .3s;
-          display: flex;
-          padding: 16px 56px;
-          justify-content: center;
-          align-items: center;
-          gap: 8px;
-          border-radius: 6px;
-          border: 1px solid var(--Main-White, #FFF);
-          &:hover{
-            background-color: white;
-            color: #211C24;
-          }
         }
       }
     }
