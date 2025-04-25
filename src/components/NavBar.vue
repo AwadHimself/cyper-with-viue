@@ -6,11 +6,11 @@ import { RouterLink } from "vue-router";
   <nav class="flex justify-center my-4">
     <div class="navbar container flex justify-between items-center px-10 py-4">
       <div class="logo"><img src="../assets/cyber.svg" alt="" srcset=""></div>
-      <div class="search">
+      <div class="search hidden md:block">
         <input type="text" id="search" placeholder="Search">
         <font-awesome-icon :icon="['fas', 'magnifying-glass']" class="mag" />
       </div>
-      <div class="links">
+      <div class="links hidden md:block ">
         <ul class=" flex gap-10 ">
           <router-link to="/" active-class="active">Home</router-link>
           <router-link to="/about" active-class="active">About</router-link>
@@ -18,13 +18,14 @@ import { RouterLink } from "vue-router";
           <router-link to="blog" active-class="active">Blog</router-link>
         </ul>
       </div>
-      <div class="icons ">
+      <div class="icons hidden min-lg:block ">
         <ul class=" flex gap-6 ">
           <font-awesome-icon :icon="['far', 'heart']" />
           <font-awesome-icon :icon="['fas', 'cart-shopping']" />
           <font-awesome-icon :icon="['fas', 'user']" />
         </ul>
       </div>
+      <font-awesome-icon :icon="['fas', 'bars']" class=" block! md:hidden! text-4xl "/>
     </div>
   </nav>
 </template>
@@ -40,7 +41,6 @@ import { RouterLink } from "vue-router";
       .search{
         position: relative;
         border-radius: 8px;
-        color: #989898;
         background: #F5F5F5;
         input{
         border-radius: 8px;
@@ -66,6 +66,7 @@ import { RouterLink } from "vue-router";
             font-weight: 500;
             line-height: normal;
             opacity: .3;
+            transition: .3s;
             &.active{
               opacity: 1;
             }
