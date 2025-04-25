@@ -1,16 +1,22 @@
 <script setup>
 import { RouterLink } from "vue-router";
+import { ref } from 'vue'
+const isMenuOpen = ref(false)
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
 </script>
 
 <template>
-  <nav class="flex justify-center my-4">
-    <div class="navbar container flex justify-between items-center px-10 py-4">
+  <nav class="flex justify-center">
+    <div class="navbar container flex items-center px-10 py-4 justify-between md:justify-evenly ">
       <div class="logo"><img src="../assets/cyber.svg" alt="" srcset=""></div>
       <div class="search hidden md:block">
         <input type="text" id="search" placeholder="Search">
         <font-awesome-icon :icon="['fas', 'magnifying-glass']" class="mag" />
       </div>
-      <div class="links hidden md:block ">
+      <div :class="['links', { 'active': isMenuOpen }] ">
         <ul class=" flex gap-10 ">
           <router-link to="/" active-class="active">Home</router-link>
           <router-link to="/about" active-class="active">About</router-link>
@@ -25,7 +31,7 @@ import { RouterLink } from "vue-router";
           <font-awesome-icon :icon="['fas', 'user']" />
         </ul>
       </div>
-      <font-awesome-icon :icon="['fas', 'bars']" class=" block! md:hidden! text-4xl "/>
+      <button class="menu-toggle" @click="toggleMenu"><font-awesome-icon :icon="['fas', 'bars']" class="  block! md:hidden! text-4xl cursor-pointer"/></button>
     </div>
   </nav>
 </template>
@@ -57,7 +63,28 @@ import { RouterLink } from "vue-router";
       }
 
       .links{
+        &.active{
+            ul{
+              @media (width<768px) {
+              height: 300px;
+              }
+            }
+          }
         ul{
+          @media (width<768px) {
+          flex-direction: column;
+          position: absolute;
+          top: 66px;
+          width: 100%;
+          align-items: center;
+          left: 0;
+          background-color: #e3e1e1;
+          color: white;
+          transition: .3s;
+          height: 0;
+          overflow: auto;
+          justify-content: center;
+        }
           a{
             color: var(--Main-Black, #000);
             font-family: Inter;
