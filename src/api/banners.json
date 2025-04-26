@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "type": "banner-md col-span-1 md:col-span-2",
+    "imgDesktop": "/src/assets/HomeAssets/PlayStation.png",
+    "imgMobile": "/src/assets/HomeAssets/PlayStationSM.png",
+    "title": "Playstation 5",
+    "description": "Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.",
+    "hasButton": false
+  },
+  {
+    "id": 2,
+    "type": "banner-lg row-start-4 col-span-1 md:col-span-2 row-span-1 md:row-span-2",
+    "imgDesktop": "/src/assets/HomeAssets/MacBook Pro 14.png",
+    "imgMobile": "/src/assets/HomeAssets/MacBook Pro 14SM.png",
+    "title": "Macbook Air",
+    "description": "The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.",
+    "hasButton": true
+  },
+  {
+    "id": 3,
+    "type": "banner-sm light",
+    "imgDesktop": "/src/assets/HomeAssets/Headphone.png",
+    "imgMobile": "/src/assets/HomeAssets/HeadphoneSM.png",
+    "title": "Apple AirPods Max",
+    "description": "Computational audio. Listen, it's powerful",
+    "hasButton": false
+  },
+  {
+    "id": 4,
+    "type": "banner-sm dark",
+    "imgDesktop": "/src/assets/HomeAssets/appleVision.png",
+    "imgMobile": "/src/assets/HomeAssets/appleVisionSM.png",
+    "title": "Apple Vision Pro",
+    "description": "Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.",
+    "hasButton": false
+  }
+]
