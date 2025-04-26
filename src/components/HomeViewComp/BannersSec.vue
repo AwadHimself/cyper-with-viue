@@ -13,8 +13,7 @@ const fetchBanners = async () => {
     const res = await axios.get('/src/api/banners.json')
     state.banners = res.data
 
-    // نضيف تأخير صناعي
-    await new Promise(resolve => setTimeout(resolve, 1500)) // ١.٥ ثانية مثلا
+    await new Promise(resolve => setTimeout(resolve, 1500))
   } catch (error) {
     console.error('Failed to fetch banners:', error)
   } finally {
