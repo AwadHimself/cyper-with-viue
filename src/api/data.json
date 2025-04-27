@@ -8,7 +8,7 @@
     {
       "id": 2,
       "name": "Smart Watches",
-      "icon": "/src/assets/icons/CategoryIcons/Smart Watches.svg"
+      "icon": "/src/assets/icons/CategoryIcons/smart watches.svg"
     },
     {
       "id": 3,
@@ -29,6 +29,354 @@
       "id": 6,
       "name": "Gaming",
       "icon": "/src/assets/icons/CategoryIcons/gaming.svg"
+    }
+  ],
+"products": [
+    {
+      "id": 1,
+      "name": "Playstation 5",
+      "description": "Experience lightning-fast loading and immersive gameplay with the PlayStation 5, featuring ultra-high-speed SSD and breathtaking graphics.",
+      "price": 499,
+      "discountPercentage": 10,
+      "brand": "Sony",
+      "category": "Gaming",
+      "stock": 40,
+      "rating": 4.9,
+      "thumbnail": "/src/assets/images/products/ps5.jpg",
+      "images": [
+        "/src/assets/images/products/ps5-1.jpg",
+        "/src/assets/images/products/ps5-2.jpg"
+      ],
+      "specs": {
+        "storage": "825GB",
+        "color": "White",
+        "controllers": "1 Included",
+        "resolution": "4K Gaming"
+      },
+      "tags": ["Bestseller", "Featured Products"]
+    },
+    {
+      "id": 2,
+      "name": "Macbook Air",
+      "description": "The incredibly thin and light MacBook Air, powered by Apple M1 chip, delivers powerful performance and amazing battery life.",
+      "price": 999,
+      "discountPercentage": 15,
+      "brand": "Apple",
+      "category": "Computers",
+      "stock": 30,
+      "rating": 4.7,
+      "thumbnail": "/src/assets/images/products/macbookair.jpg",
+      "images": [
+        "/src/assets/images/products/macbookair-1.jpg",
+        "/src/assets/images/products/macbookair-2.jpg"
+      ],
+      "specs": {
+        "processor": "Apple M1",
+        "ram": "8GB",
+        "storage": "256GB SSD",
+        "display": "13.3-inch Retina"
+      },
+      "tags": ["Featured Products", "Discounts up to -50%"]
+    },
+    {
+      "id": 3,
+      "name": "Apple AirPods Max",
+      "description": "High-fidelity audio, Active Noise Cancellation, and a customizable fit make AirPods Max the ultimate personal listening experience.",
+      "price": 549,
+      "discountPercentage": 20,
+      "brand": "Apple",
+      "category": "Headphones",
+      "stock": 50,
+      "rating": 4.6,
+      "thumbnail": "/src/assets/images/products/airpodsmax.jpg",
+      "images": [
+        "/src/assets/images/products/airpodsmax-1.jpg",
+        "/src/assets/images/products/airpodsmax-2.jpg"
+      ],
+      "specs": {
+        "color": "Silver",
+        "batteryLife": "20 hours",
+        "features": "Active Noise Cancellation, Spatial Audio"
+      },
+      "tags": ["Bestseller", "Discounts up to -50%"]
+    },
+    {
+      "id": 4,
+      "name": "Apple Vision Pro",
+      "description": "Apple Vision Pro is a revolutionary spatial computer that seamlessly blends digital content with your physical space.",
+      "price": 3499,
+      "discountPercentage": 5,
+      "brand": "Apple",
+      "category": "Computers",
+      "stock": 10,
+      "rating": 4.9,
+      "thumbnail": "/src/assets/images/products/visionpro.jpg",
+      "images": [
+        "/src/assets/images/products/visionpro-1.jpg",
+        "/src/assets/images/products/visionpro-2.jpg"
+      ],
+      "specs": {
+        "color": "Silver",
+        "display": "Micro-OLED",
+        "chip": "Apple M2 + R1",
+        "storage": "256GB"
+      },
+      "tags": ["New Arrival", "Featured Products"]
+    },
+    {
+      "id": 5,
+      "name": "Apple iPhone 14 Pro Max 128GB Deep Purple",
+      "description": "iPhone 14 Pro Max. Always-On display. Dynamic Island. A magical new way to interact with iPhone. 48MP camera for mind-blowing detail.",
+      "price": 1199,
+      "discountPercentage": 10,
+      "brand": "Apple",
+      "category": "Phones",
+      "stock": 60,
+      "rating": 4.8,
+      "thumbnail": "/src/assets/images/products/iphone14promaxdeeppurple.jpg",
+      "images": [
+        "/src/assets/images/products/iphone14promaxdeeppurple-1.jpg",
+        "/src/assets/images/products/iphone14promaxdeeppurple-2.jpg"
+      ],
+      "specs": {
+        "storage": "128GB",
+        "color": "Deep Purple",
+        "screen": "6.7 inch Super Retina XDR",
+        "camera": "48MP",
+        "battery": "4323mAh",
+        "chip": "A16 Bionic"
+      },
+      "tags": []
+    },
+    {
+      "id": 6,
+      "name": "Blackmagic Pocket Cinema Camera 6K",
+      "description": "Capture cinematic images with the Blackmagic Pocket Cinema Camera 6K featuring a Super 35 sensor and EF lens mount.",
+      "price": 1995,
+      "discountPercentage": 12,
+      "brand": "Blackmagic",
+      "category": "Cameras",
+      "stock": 15,
+      "rating": 4.7,
+      "thumbnail": "/src/assets/images/products/blackmagic6k.jpg",
+      "images": [
+        "/src/assets/images/products/blackmagic6k-1.jpg",
+        "/src/assets/images/products/blackmagic6k-2.jpg"
+      ],
+      "specs": {
+        "sensor": "Super 35",
+        "mount": "Canon EF",
+        "recordingFormats": "ProRes, Blackmagic RAW",
+        "resolution": "6K"
+      },
+      "tags": ["Featured Products"]
+    },
+    {
+      "id": 7,
+      "name": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "description": "Powerful health features, a brighter display, and carbon-neutral design make Apple Watch Series 9 more capable than ever.",
+      "price": 399,
+      "discountPercentage": 8,
+      "brand": "Apple",
+      "category": "Smart Watches",
+      "stock": 45,
+      "rating": 4.6,
+      "thumbnail": "/src/assets/images/products/applewatchseries9.jpg",
+      "images": [
+        "/src/assets/images/products/applewatchseries9-1.jpg",
+        "/src/assets/images/products/applewatchseries9-2.jpg"
+      ],
+      "specs": {
+        "size": "41mm",
+        "material": "Aluminium",
+        "connectivity": "GPS",
+        "color": "Starlight"
+      },
+      "tags": ["New Arrival", "Bestseller"]
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "description": "Galaxy Watch6 Classic delivers classic design with modern innovations like advanced sleep tracking and fitness monitoring.",
+      "price": 449,
+      "discountPercentage": 18,
+      "brand": "Samsung",
+      "category": "Smart Watches",
+      "stock": 30,
+      "rating": 4.5,
+      "thumbnail": "/src/assets/images/products/galaxywatch6.jpg",
+      "images": [
+        "/src/assets/images/products/galaxywatch6-1.jpg",
+        "/src/assets/images/products/galaxywatch6-2.jpg"
+      ],
+      "specs": {
+        "size": "47mm",
+        "connectivity": "Bluetooth + LTE",
+        "material": "Stainless Steel",
+        "color": "Black"
+      },
+      "tags": ["Featured Products"]
+    },
+    {
+      "id": 9,
+      "name": "Galaxy Z Fold5 Unlocked | 256GB | Phantom Black",
+      "description": "Galaxy Z Fold5 with a huge 7.6-inch main screen, perfect for multitasking and gaming, with a slimmer, lighter design.",
+      "price": 1799,
+      "discountPercentage": 15,
+      "brand": "Samsung",
+      "category": "Phones",
+      "stock": 25,
+      "rating": 4.8,
+      "thumbnail": "/src/assets/images/products/galaxyzfold5.jpg",
+      "images": [
+        "/src/assets/images/products/galaxyzfold5-1.jpg",
+        "/src/assets/images/products/galaxyzfold5-2.jpg"
+      ],
+      "specs": {
+        "storage": "256GB",
+        "color": "Phantom Black",
+        "screen": "7.6-inch Dynamic AMOLED 2X",
+        "camera": "50MP",
+        "battery": "4400mAh"
+      },
+      "tags": ["New Arrival", "Featured Products"]
+    },
+    {
+      "id": 10,
+      "name": "Galaxy Buds FE Graphite",
+      "description": "Galaxy Buds FE offer rich sound, active noise cancelling, and comfortable fit at an accessible price point.",
+      "price": 99,
+      "discountPercentage": 25,
+      "brand": "Samsung",
+      "category": "Headphones",
+      "stock": 60,
+      "rating": 4.4,
+      "thumbnail": "/src/assets/images/products/galaxybudsfe.jpg",
+      "images": [
+        "/src/assets/images/products/galaxybudsfe-1.jpg",
+        "/src/assets/images/products/galaxybudsfe-2.jpg"
+      ],
+      "specs": {
+        "color": "Graphite",
+        "batteryLife": "8 hours",
+        "features": "ANC, Touch Control"
+      },
+      "tags": ["Discounts up to -50%"]
+    },
+    {
+      "id": 11,
+      "name": "Apple iPad 9 10.2\" 64GB Wi-Fi Silver (2021)",
+      "description": "iPad 9th Gen is the most affordable iPad with powerful A13 Bionic chip and stunning Retina display.",
+      "price": 329,
+      "discountPercentage": 12,
+      "brand": "Apple",
+      "category": "Computers",
+      "stock": 35,
+      "rating": 4.7,
+      "thumbnail": "/src/assets/images/products/ipad9.jpg",
+      "images": [
+        "/src/assets/images/products/ipad9-1.jpg",
+        "/src/assets/images/products/ipad9-2.jpg"
+      ],
+      "specs": {
+        "storage": "64GB",
+        "color": "Silver",
+        "screen": "10.2-inch Retina",
+        "chip": "A13 Bionic"
+      },
+      "tags": ["Bestseller", "Discounts up to -50%"]
+    },
+    {
+      "id": 12,
+      "name": "Apple iPad Pro",
+      "description": "The iPad Pro is the ultimate iPad experience, powered by the M2 chip with a Liquid Retina XDR display.",
+      "price": 1099,
+      "discountPercentage": 5,
+      "brand": "Apple",
+      "category": "Computers",
+      "stock": 20,
+      "rating": 4.9,
+      "thumbnail": "/src/assets/images/products/ipadpro.jpg",
+      "images": [
+        "/src/assets/images/products/ipadpro-1.jpg",
+        "/src/assets/images/products/ipadpro-2.jpg"
+      ],
+      "specs": {
+        "storage": "128GB",
+        "color": "Silver",
+        "screen": "12.9-inch Liquid Retina XDR",
+        "chip": "Apple M2"
+      },
+      "tags": ["New Arrival", "Featured Products"]
+    },
+    {
+      "id": 13,
+      "name": "Apple iPhone 14 Pro 512GB Gold",
+      "description": "iPhone 14 Pro with 512GB storage in a stunning Gold finish, featuring Dynamic Island, 48MP Main camera, and A16 Bionic chip.",
+      "price": 1499,
+      "discountPercentage": 10,
+      "brand": "Apple",
+      "category": "Phones",
+      "stock": 45,
+      "rating": 4.8,
+      "thumbnail": "/src/assets/images/products/iphone14progold.jpg",
+      "images": [
+        "/src/assets/images/products/iphone14progold-1.jpg",
+        "/src/assets/images/products/iphone14progold-2.jpg"
+      ],
+      "specs": {
+        "storage": "512GB",
+        "color": "Gold",
+        "screen": "6.1-inch Super Retina XDR",
+        "chip": "A16 Bionic"
+      },
+      "tags": ["Bestseller", "Featured Products"]
+    },
+    {
+      "id": 14,
+      "name": "Apple iPhone 14 Pro 1TB Gold",
+      "description": "The ultimate iPhone experience with 1TB storage, ideal for professionals who need maximum capacity and performance.",
+      "price": 1799,
+      "discountPercentage": 7,
+      "brand": "Apple",
+      "category": "Phones",
+      "stock": 20,
+      "rating": 4.9,
+      "thumbnail": "/src/assets/images/products/iphone14pro1tbgold.jpg",
+      "images": [
+        "/src/assets/images/products/iphone14pro1tbgold-1.jpg",
+        "/src/assets/images/products/iphone14pro1tbgold-2.jpg"
+      ],
+      "specs": {
+        "storage": "1TB",
+        "color": "Gold",
+        "screen": "6.1-inch Super Retina XDR",
+        "chip": "A16 Bionic"
+      },
+      "tags": ["New Arrival", "Featured Products"]
+    },
+    {
+      "id": 15,
+      "name": "Apple iPhone 11 128GB White",
+      "description": "iPhone 11 with dual-camera system, A13 Bionic chip, and 128GB storage, available in stunning White.",
+      "price": 599,
+      "discountPercentage": 18,
+      "brand": "Apple",
+      "category": "Phones",
+      "stock": 50,
+      "rating": 4.6,
+      "thumbnail": "/src/assets/images/products/iphone11white.jpg",
+      "images": [
+        "/src/assets/images/products/iphone11white-1.jpg",
+        "/src/assets/images/products/iphone11white-2.jpg"
+      ],
+      "specs": {
+        "storage": "128GB",
+        "color": "White",
+        "screen": "6.1-inch Liquid Retina",
+        "chip": "A13 Bionic"
+      },
+      "tags": ["Discounts up to -50%", "Featured Products"]
     }
   ]
 }
