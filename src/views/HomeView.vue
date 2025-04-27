@@ -2,11 +2,11 @@
 import HeroSec from '@/components/HomeViewComp/HeroSec.vue';
 import BannersSec from '@/components/HomeViewComp/BannersSec.vue';
 import CategorySec from '@/components/HomeViewComp/CategorySec.vue';
-import ProductCard from '@/components/GlobalComponents/ProductCard.vue';
+import ProductsSec from '@/components/HomeViewComp/ProductsSec.vue';
 </script>
 <template>
   <HeroSec/>
   <BannersSec/>
   <CategorySec />
-  <ProductCard />
+  <ProductsSec limit="4" />
 </template>

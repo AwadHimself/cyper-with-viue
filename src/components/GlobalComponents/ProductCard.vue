@@ -1,8 +1,20 @@
 <script setup>
-import { reactive } from 'vue';
+import { reactive , defineProps } from 'vue';
 import { Skeleton } from 'primevue';
+
+
+const props =  defineProps({
+  product: {
+    type: Object,
+    required: true,
+  },
+  loading: {
+    type: Boolean,
+    default: true,
+  }
+})
+
 const state = reactive({
-  loading : false,
   wWishList : false
 })
 
@@ -18,11 +30,11 @@ const LikeTogle = ()=>{
       <img v-else  @click="LikeTogle" src="../../assets/icons/CategoryIcons/liked.png" class=" cursor-pointer" alt="" />
     </div>
     <div>
-      <img src="../../assets/products/Apple_iPhone_12.png" style="width: 160px; height: 190px" v-if="!state.loading"  />
+      <img :src="props.product.thumbnail" style="width: 160px; height: 190px" v-if="!props.loading"  />
       <Skeleton v-else width="10rem" height="11.875rem" ></Skeleton>
     </div>
     <div>
-      <p  v-if="!state.loading"  class="title">Apple iPhone 12</p>
+      <p  v-if="!props.loading"  class="title flex justify-center items-center">{{ props.product.name }}</p>
       <div  v-else class="flex flex-col items-center gap-1">
         <Skeleton width="10rem" height=".5em" ></Skeleton>
         <Skeleton width="8rem" height=".5rem" ></Skeleton>
@@ -30,11 +42,11 @@ const LikeTogle = ()=>{
       </div>
     </div>
     <div>
-      <p v-if="!state.loading"  class="price">24500EGP</p>
+      <p v-if="!props.loading"  class="price">{{ props.product.price }}$</p>
       <Skeleton v-else width="8rem" height="1.5em" ></Skeleton>
     </div>
     <div>
-      <button v-if="!state.loading" class="buy-now">Buy Now</button>
+      <button v-if="!props.loading" class="buy-now">Buy Now</button>
       <Skeleton v-else width="12rem" height="2.2em" ></Skeleton>
     </div>
   </div>
@@ -48,6 +60,8 @@ const LikeTogle = ()=>{
   background: #f6f6f6;
   .title{
     color: var(--Main-Black, #000);
+    height: 48px;
+    width: 236px;
     text-align: center;
     font-family: Inter;
     font-size: 16px;
@@ -66,6 +80,7 @@ const LikeTogle = ()=>{
     letter-spacing: 0.72px;
   }
   .buy-now {
+    cursor: pointer;
     display: flex;
     color: white;
     padding: 12px 64px;

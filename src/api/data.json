@@ -42,10 +42,10 @@
       "category": "Gaming",
       "stock": 40,
       "rating": 4.9,
-      "thumbnail": "/src/assets/images/products/ps5.jpg",
+      "thumbnail": "/src/assets/products/ps5.png",
       "images": [
-        "/src/assets/images/products/ps5-1.jpg",
-        "/src/assets/images/products/ps5-2.jpg"
+        "/src/assets/products/ps5-1.png",
+        "/src/assets/products/ps5-2.png"
       ],
       "specs": {
         "storage": "825GB",
@@ -65,10 +65,10 @@
       "category": "Computers",
       "stock": 30,
       "rating": 4.7,
-      "thumbnail": "/src/assets/images/products/macbookair.jpg",
+      "thumbnail": "/src/assets/products/macbookair.png",
       "images": [
-        "/src/assets/images/products/macbookair-1.jpg",
-        "/src/assets/images/products/macbookair-2.jpg"
+        "/src/assets/products/macbookair-1.png",
+        "/src/assets/products/macbookair-2.png"
       ],
       "specs": {
         "processor": "Apple M1",
@@ -76,7 +76,7 @@
         "storage": "256GB SSD",
         "display": "13.3-inch Retina"
       },
-      "tags": ["Featured Products", "Discounts up to -50%"]
+      "tags": ["Featured Products"]
     },
     {
       "id": 3,
@@ -88,17 +88,17 @@
       "category": "Headphones",
       "stock": 50,
       "rating": 4.6,
-      "thumbnail": "/src/assets/images/products/airpodsmax.jpg",
+      "thumbnail": "/src/assets/products/airpodsmax.png",
       "images": [
-        "/src/assets/images/products/airpodsmax-1.jpg",
-        "/src/assets/images/products/airpodsmax-2.jpg"
+        "/src/assets/products/airpodsmax-1.png",
+        "/src/assets/products/airpodsmax-2.png"
       ],
       "specs": {
         "color": "Silver",
         "batteryLife": "20 hours",
         "features": "Active Noise Cancellation, Spatial Audio"
       },
-      "tags": ["Bestseller", "Discounts up to -50%"]
+      "tags": ["Bestseller"]
     },
     {
       "id": 4,
@@ -110,10 +110,10 @@
       "category": "Computers",
       "stock": 10,
       "rating": 4.9,
-      "thumbnail": "/src/assets/images/products/visionpro.jpg",
+      "thumbnail": "/src/assets/products/visionpro.png",
       "images": [
-        "/src/assets/images/products/visionpro-1.jpg",
-        "/src/assets/images/products/visionpro-2.jpg"
+        "/src/assets/products/visionpro-1.png",
+        "/src/assets/products/visionpro-2.png"
       ],
       "specs": {
         "color": "Silver",
@@ -133,10 +133,10 @@
       "category": "Phones",
       "stock": 60,
       "rating": 4.8,
-      "thumbnail": "/src/assets/images/products/iphone14promaxdeeppurple.jpg",
+      "thumbnail": "/src/assets/products/iphone14promaxdeeppurple.png",
       "images": [
-        "/src/assets/images/products/iphone14promaxdeeppurple-1.jpg",
-        "/src/assets/images/products/iphone14promaxdeeppurple-2.jpg"
+        "/src/assets/products/iphone14promaxdeeppurple-1.png",
+        "/src/assets/products/iphone14promaxdeeppurple-2.png"
       ],
       "specs": {
         "storage": "128GB",
@@ -158,10 +158,10 @@
       "category": "Cameras",
       "stock": 15,
       "rating": 4.7,
-      "thumbnail": "/src/assets/images/products/blackmagic6k.jpg",
+      "thumbnail": "/src/assets/products/blackmagic6k.png",
       "images": [
-        "/src/assets/images/products/blackmagic6k-1.jpg",
-        "/src/assets/images/products/blackmagic6k-2.jpg"
+        "/src/assets/products/blackmagic6k-1.png",
+        "/src/assets/products/blackmagic6k-2.png"
       ],
       "specs": {
         "sensor": "Super 35",
@@ -181,10 +181,10 @@
       "category": "Smart Watches",
       "stock": 45,
       "rating": 4.6,
-      "thumbnail": "/src/assets/images/products/applewatchseries9.jpg",
+      "thumbnail": "/src/assets/products/applewatchseries9.png",
       "images": [
-        "/src/assets/images/products/applewatchseries9-1.jpg",
-        "/src/assets/images/products/applewatchseries9-2.jpg"
+        "/src/assets/products/applewatchseries9-1.png",
+        "/src/assets/products/applewatchseries9-2.png"
       ],
       "specs": {
         "size": "41mm",
@@ -204,10 +204,10 @@
       "category": "Smart Watches",
       "stock": 30,
       "rating": 4.5,
-      "thumbnail": "/src/assets/images/products/galaxywatch6.jpg",
+      "thumbnail": "/src/assets/products/galaxywatch6.png",
       "images": [
-        "/src/assets/images/products/galaxywatch6-1.jpg",
-        "/src/assets/images/products/galaxywatch6-2.jpg"
+        "/src/assets/products/galaxywatch6-1.png",
+        "/src/assets/products/galaxywatch6-2.png"
       ],
       "specs": {
         "size": "47mm",
@@ -227,10 +227,10 @@
       "category": "Phones",
       "stock": 25,
       "rating": 4.8,
-      "thumbnail": "/src/assets/images/products/galaxyzfold5.jpg",
+      "thumbnail": "/src/assets/products/galaxyzfold5.png",
       "images": [
-        "/src/assets/images/products/galaxyzfold5-1.jpg",
-        "/src/assets/images/products/galaxyzfold5-2.jpg"
+        "/src/assets/products/galaxyzfold5-1.png",
+        "/src/assets/products/galaxyzfold5-2.png"
       ],
       "specs": {
         "storage": "256GB",
@@ -251,17 +251,17 @@
       "category": "Headphones",
       "stock": 60,
       "rating": 4.4,
-      "thumbnail": "/src/assets/images/products/galaxybudsfe.jpg",
+      "thumbnail": "/src/assets/products/galaxybudsfe.png",
       "images": [
-        "/src/assets/images/products/galaxybudsfe-1.jpg",
-        "/src/assets/images/products/galaxybudsfe-2.jpg"
+        "/src/assets/products/galaxybudsfe-1.png",
+        "/src/assets/products/galaxybudsfe-2.png"
       ],
       "specs": {
         "color": "Graphite",
         "batteryLife": "8 hours",
         "features": "ANC, Touch Control"
       },
-      "tags": ["Discounts up to -50%"]
+      "tags": []
     },
     {
       "id": 11,
@@ -273,10 +273,10 @@
       "category": "Computers",
       "stock": 35,
       "rating": 4.7,
-      "thumbnail": "/src/assets/images/products/ipad9.jpg",
+      "thumbnail": "/src/assets/products/ipad9.png",
       "images": [
-        "/src/assets/images/products/ipad9-1.jpg",
-        "/src/assets/images/products/ipad9-2.jpg"
+        "/src/assets/products/ipad9-1.png",
+        "/src/assets/products/ipad9-2.png"
       ],
       "specs": {
         "storage": "64GB",
@@ -284,7 +284,7 @@
         "screen": "10.2-inch Retina",
         "chip": "A13 Bionic"
       },
-      "tags": ["Bestseller", "Discounts up to -50%"]
+      "tags": ["Bestseller"]
     },
     {
       "id": 12,
@@ -296,10 +296,10 @@
       "category": "Computers",
       "stock": 20,
       "rating": 4.9,
-      "thumbnail": "/src/assets/images/products/ipadpro.jpg",
+      "thumbnail": "/src/assets/products/ipadpro.png",
       "images": [
-        "/src/assets/images/products/ipadpro-1.jpg",
-        "/src/assets/images/products/ipadpro-2.jpg"
+        "/src/assets/products/ipadpro-1.png",
+        "/src/assets/products/ipadpro-2.png"
       ],
       "specs": {
         "storage": "128GB",
@@ -319,10 +319,10 @@
       "category": "Phones",
       "stock": 45,
       "rating": 4.8,
-      "thumbnail": "/src/assets/images/products/iphone14progold.jpg",
+      "thumbnail": "/src/assets/products/iphone14progold.png",
       "images": [
-        "/src/assets/images/products/iphone14progold-1.jpg",
-        "/src/assets/images/products/iphone14progold-2.jpg"
+        "/src/assets/products/iphone14progold-1.png",
+        "/src/assets/products/iphone14progold-2.png"
       ],
       "specs": {
         "storage": "512GB",
@@ -342,10 +342,10 @@
       "category": "Phones",
       "stock": 20,
       "rating": 4.9,
-      "thumbnail": "/src/assets/images/products/iphone14pro1tbgold.jpg",
+      "thumbnail": "/src/assets/products/iphone14pro1tbgold.png",
       "images": [
-        "/src/assets/images/products/iphone14pro1tbgold-1.jpg",
-        "/src/assets/images/products/iphone14pro1tbgold-2.jpg"
+        "/src/assets/products/iphone14pro1tbgold-1.png",
+        "/src/assets/products/iphone14pro1tbgold-2.png"
       ],
       "specs": {
         "storage": "1TB",
@@ -365,10 +365,10 @@
       "category": "Phones",
       "stock": 50,
       "rating": 4.6,
-      "thumbnail": "/src/assets/images/products/iphone11white.jpg",
+      "thumbnail": "/src/assets/products/iphone11white.png",
       "images": [
-        "/src/assets/images/products/iphone11white-1.jpg",
-        "/src/assets/images/products/iphone11white-2.jpg"
+        "/src/assets/products/iphone11white-1.png",
+        "/src/assets/products/iphone11white-2.png"
       ],
       "specs": {
         "storage": "128GB",
@@ -376,7 +376,7 @@
         "screen": "6.1-inch Liquid Retina",
         "chip": "A13 Bionic"
       },
-      "tags": ["Discounts up to -50%", "Featured Products"]
+      "tags": ["Featured Products"]
     }
   ]
 }
