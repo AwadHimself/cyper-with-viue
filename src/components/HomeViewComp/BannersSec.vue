@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section >
+  <section>
     <div v-if="state.loading" >
       <BannerLoader />
     </div>
