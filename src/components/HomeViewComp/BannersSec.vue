@@ -1,8 +1,8 @@
 <script setup>
 import { reactive, onMounted } from 'vue'
 import axios from 'axios'
-import BannerItem from '../BannerItem.vue'
-import BannerLoader from '../BannerLoader.vue'
+import BannerItem from './BannerItem.vue'
+import BannerLoader from './BannerLoader.vue'
 const state = reactive({
   banners: [],
   loading: true,
@@ -12,7 +12,6 @@ const fetchBanners = async () => {
   try {
     const res = await axios.get('/src/api/banners.json')
     state.banners = res.data
-
     await new Promise(resolve => setTimeout(resolve, 1500))
   } catch (error) {
     console.error('Failed to fetch banners:', error)

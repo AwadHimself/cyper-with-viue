@@ -1,6 +1,6 @@
 <script setup>
 import { reactive, onMounted, onUnmounted, defineProps } from 'vue'
-import ShopNowBtn from './ShopNowBtn.vue'
+import ShopNowBtn from '../GlobalComponents/ShopNowBtn.vue'
 
 const props = defineProps({
   banner: {

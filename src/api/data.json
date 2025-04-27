@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Phones",
+      "icon": "/src/assets/icons/CategoryIcons/phones.svg"
+    },
+    {
+      "id": 2,
+      "name": "Smart Watches",
+      "icon": "/src/assets/icons/CategoryIcons/Smart Watches.svg"
+    },
+    {
+      "id": 3,
+      "name": "Cameras",
+      "icon": "/src/assets/icons/CategoryIcons/cameras.svg"
+    },
+    {
+      "id": 4,
+      "name": "Headphones",
+      "icon": "/src/assets/icons/CategoryIcons/headphones.svg"
+    },
+    {
+      "id": 5,
+      "name": "Computers",
+      "icon": "/src/assets/icons/CategoryIcons/computers.svg"
+    },
+    {
+      "id": 6,
+      "name": "Gaming",
+      "icon": "/src/assets/icons/CategoryIcons/gaming.svg"
+    }
+  ]
+}

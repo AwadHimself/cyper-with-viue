@@ -11,7 +11,7 @@ const toggleMenu = () => {
 <template>
   <nav class="flex justify-center">
     <div class="navbar container flex items-center px-10 py-4 justify-between md:justify-evenly ">
-      <div class="logo"><img src="../assets/cyber.svg" alt="" srcset=""></div>
+      <div class="logo"><img src="../../assets/cyber.svg" alt="" srcset=""></div>
       <div class="search hidden md:block">
         <input type="text" id="search" placeholder="Search">
         <font-awesome-icon :icon="['fas', 'magnifying-glass']" class="mag" />

@@ -1,5 +1,5 @@
 <script setup>
-import ShopNowBtn from '../ShopNowBtn.vue';
+import ShopNowBtn from '../GlobalComponents/ShopNowBtn.vue';
 
 </script>
 
