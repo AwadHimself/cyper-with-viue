@@ -1,5 +1,6 @@
 <script setup>
-import { reactive, defineProps, onMounted, computed  } from 'vue'
+import { reactive, defineProps, onMounted, computed } from 'vue'
+import { RouterLink } from 'vue-router'
 import { Skeleton } from 'primevue'
 import { useToast } from 'primevue/usetoast'
 import axios from 'axios'
@@ -36,14 +37,12 @@ const props = defineProps({
   },
 })
 
-
 const state = reactive({
   wWishList: false,
   wishlist: [],
 })
 
 const getWishlist = async () => {
-
   try {
     const response = await axios.get('/api/wishlist')
     state.wishlist = response.data
@@ -52,16 +51,19 @@ const getWishlist = async () => {
   }
 }
 
-const addToWishlist = async () => {
-  const product = {
+const product = {
     id: props.product.id,
     name: props.product.name,
+    category :props.product.category
   }
+
+
+const addToWishlist = async () => {
   try {
     if (!state.wishlist.some((item) => item.productId === product.id)) {
       await axios.post('/api/wishlist', product)
       Added()
-      state.wishlist.push( product )
+      state.wishlist.push(product)
       state.wWishList = true
     }
   } catch (error) {
@@ -75,43 +77,32 @@ const addToWishlist = async () => {
   }
 }
 
-
-
 const removeFromWishlist = async () => {
-  const product = {
-    id: props.product.id,
-    name: props.product.name,
-  }
-
   try {
-      await axios.delete(`/api/wishlist/${product.id}`);
-      Removed();
-      getWishlist();
-      state.wWishList = false;
+    await axios.delete(`/api/wishlist/${product.id}`)
+    Removed()
+    getWishlist()
+    state.wWishList = false
   } catch (error) {
-    console.error('Error removing from wishlist:', error);
+    console.error('Error removing from wishlist:', error)
     toast.add({
       severity: 'error',
       summary: 'Error',
       detail: 'There was an error removing the product from your wishlist!',
       life: 3000,
-    });
+    })
   }
 }
-
 
 const isProductInWishlist = computed(() => {
   return state.wishlist.some((item) => item.id === props.product.id)
 })
 
-const LikeTogle = async (event) => {
-  event.preventDefault()
-  event.stopPropagation()
-
+const LikeTogle = async () => {
   if (isProductInWishlist.value) {
-    await removeFromWishlist(event)
+    await removeFromWishlist()
   } else {
-    await addToWishlist(event)
+    await addToWishlist()
   }
 }
 onMounted(() => {
@@ -152,7 +143,7 @@ onMounted(() => {
       <Skeleton v-else width="8rem" height="1.5em" />
     </div>
     <div>
-      <button v-if="!props.loading" class="buy-now">Buy Now</button>
+      <routerLink :to="`/${product.category}/${product.id}`" v-if="!props.loading" class="buy-now">Buy Now</routerLink>
       <Skeleton v-else width="12rem" height="2.2em" />
     </div>
   </div>
