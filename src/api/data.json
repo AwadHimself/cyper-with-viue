@@ -185,7 +185,7 @@
     },
     {
       "id": "7",
-      "name": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "name": "Apple Watch Series 9 Starlight ",
       "description": "Powerful health features, a brighter display, and carbon-neutral design make Apple Watch Series 9 more capable than ever.",
       "price": 399,
       "discountPercentage": 8,
@@ -211,7 +211,7 @@
     },
     {
       "id": "8",
-      "name": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "name": "Samsung Galaxy Watch6 Classic 47mm",
       "description": "Galaxy Watch6 Classic delivers classic design with modern innovations like advanced sleep tracking and fitness monitoring.",
       "price": 449,
       "discountPercentage": 18,
@@ -285,7 +285,7 @@
     },
     {
       "id": "11",
-      "name": "Apple iPad 9 10.2\" 64GB Wi-Fi Silver (2021)",
+      "name": "Apple iPad 9 10.2\" 64GB Wi-Fi Silver",
       "description": "iPad 9th Gen is the most affordable iPad with powerful A13 Bionic chip and stunning Retina display.",
       "price": 329,
       "discountPercentage": 12,

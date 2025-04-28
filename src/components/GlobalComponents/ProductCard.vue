@@ -121,9 +121,8 @@ onMounted(() => {
       </button>
     </div>
     <div>
-      <img
+      <img class="ProductImg"
         :src="props.product.thumbnail"
-        style="width: 160px; height: 190px"
         v-if="!props.loading"
       />
       <Skeleton v-else width="10rem" height="11.875rem" />
@@ -133,7 +132,7 @@ onMounted(() => {
         {{ props.product.name }}
       </p>
       <div v-else class="flex flex-col items-center gap-1">
-        <Skeleton width="15rem" height=".7em" />
+        <Skeleton width="14.7rem" height=".7em" />
         <Skeleton width="10rem" height=".7rem" />
         <Skeleton width="5rem" height=".7rem" />
       </div>
@@ -143,7 +142,7 @@ onMounted(() => {
       <Skeleton v-else width="8rem" height="1.5em" />
     </div>
     <div>
-      <routerLink :to="`/${product.category}/${product.id}`" v-if="!props.loading" class="buy-now">Buy Now</routerLink>
+      <routerLink :to="`/${product.category}/${product.id}`" v-if="!props.loading" class="buy-now  ">Buy Now</routerLink>
       <Skeleton v-else width="12rem" height="2.2em" />
     </div>
   </div>
@@ -165,6 +164,12 @@ onMounted(() => {
     font-style: normal;
     font-weight: 600;
     line-height: 24px; /* 150% */
+    @media (width <= 768px) {
+      &{
+        width: 139.5px;
+        height: 48px;
+      }
+    }
   }
   .price {
     color: var(--Main-Black, #000);
@@ -186,6 +191,21 @@ onMounted(() => {
     gap: 8px;
     border-radius: 8px;
     background: var(--Main-Black, #000);
+    @media (width <= 768px) {
+      &{
+        width: 139.5px;
+      }
+    }
+  }
+  .ProductImg{
+    width: 160px;
+    height: 190px;
+    @media (width <= 768px) {
+      &{
+        width: 104px;
+        height: 104px;
+      }
+    }
   }
 }
 </style>

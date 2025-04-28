@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "json-server --watch src/api/data.json --port 5000",
+    "server": "json-server src/api/data.json --port 5000",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
