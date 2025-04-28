@@ -1,39 +1,39 @@
 {
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Phones",
       "icon": "/src/assets/icons/CategoryIcons/phones.svg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Smart Watches",
       "icon": "/src/assets/icons/CategoryIcons/smart watches.svg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Cameras",
       "icon": "/src/assets/icons/CategoryIcons/cameras.svg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Headphones",
       "icon": "/src/assets/icons/CategoryIcons/headphones.svg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Computers",
       "icon": "/src/assets/icons/CategoryIcons/computers.svg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Gaming",
       "icon": "/src/assets/icons/CategoryIcons/gaming.svg"
     }
   ],
-"products": [
+  "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Playstation 5",
       "description": "Experience lightning-fast loading and immersive gameplay with the PlayStation 5, featuring ultra-high-speed SSD and breathtaking graphics.",
       "price": 499,
@@ -53,10 +53,13 @@
         "controllers": "1 Included",
         "resolution": "4K Gaming"
       },
-      "tags": ["Bestseller", "Featured Products"]
+      "tags": [
+        "Bestseller",
+        "Featured Products"
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Macbook Air",
       "description": "The incredibly thin and light MacBook Air, powered by Apple M1 chip, delivers powerful performance and amazing battery life.",
       "price": 999,
@@ -76,10 +79,12 @@
         "storage": "256GB SSD",
         "display": "13.3-inch Retina"
       },
-      "tags": ["Featured Products"]
+      "tags": [
+        "Featured Products"
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Apple AirPods Max",
       "description": "High-fidelity audio, Active Noise Cancellation, and a customizable fit make AirPods Max the ultimate personal listening experience.",
       "price": 549,
@@ -98,10 +103,12 @@
         "batteryLife": "20 hours",
         "features": "Active Noise Cancellation, Spatial Audio"
       },
-      "tags": ["Bestseller"]
+      "tags": [
+        "Bestseller"
+      ]
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Apple Vision Pro",
       "description": "Apple Vision Pro is a revolutionary spatial computer that seamlessly blends digital content with your physical space.",
       "price": 3499,
@@ -121,10 +128,13 @@
         "chip": "Apple M2 + R1",
         "storage": "256GB"
       },
-      "tags": ["New Arrival", "Featured Products"]
+      "tags": [
+        "New Arrival",
+        "Featured Products"
+      ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Apple iPhone 14 Pro Max 128GB Deep Purple",
       "description": "iPhone 14 Pro Max. Always-On display. Dynamic Island. A magical new way to interact with iPhone. 48MP camera for mind-blowing detail.",
       "price": 1199,
@@ -149,7 +159,7 @@
       "tags": []
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Blackmagic Pocket Cinema Camera 6K",
       "description": "Capture cinematic images with the Blackmagic Pocket Cinema Camera 6K featuring a Super 35 sensor and EF lens mount.",
       "price": 1995,
@@ -169,10 +179,12 @@
         "recordingFormats": "ProRes, Blackmagic RAW",
         "resolution": "6K"
       },
-      "tags": ["Featured Products"]
+      "tags": [
+        "Featured Products"
+      ]
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "description": "Powerful health features, a brighter display, and carbon-neutral design make Apple Watch Series 9 more capable than ever.",
       "price": 399,
@@ -192,10 +204,13 @@
         "connectivity": "GPS",
         "color": "Starlight"
       },
-      "tags": ["New Arrival", "Bestseller"]
+      "tags": [
+        "New Arrival",
+        "Bestseller"
+      ]
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Samsung Galaxy Watch6 Classic 47mm Black",
       "description": "Galaxy Watch6 Classic delivers classic design with modern innovations like advanced sleep tracking and fitness monitoring.",
       "price": 449,
@@ -215,10 +230,12 @@
         "material": "Stainless Steel",
         "color": "Black"
       },
-      "tags": ["Featured Products"]
+      "tags": [
+        "Featured Products"
+      ]
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Galaxy Z Fold5 Unlocked | 256GB | Phantom Black",
       "description": "Galaxy Z Fold5 with a huge 7.6-inch main screen, perfect for multitasking and gaming, with a slimmer, lighter design.",
       "price": 1799,
@@ -239,10 +256,13 @@
         "camera": "50MP",
         "battery": "4400mAh"
       },
-      "tags": ["New Arrival", "Featured Products"]
+      "tags": [
+        "New Arrival",
+        "Featured Products"
+      ]
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Galaxy Buds FE Graphite",
       "description": "Galaxy Buds FE offer rich sound, active noise cancelling, and comfortable fit at an accessible price point.",
       "price": 99,
@@ -264,7 +284,7 @@
       "tags": []
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Apple iPad 9 10.2\" 64GB Wi-Fi Silver (2021)",
       "description": "iPad 9th Gen is the most affordable iPad with powerful A13 Bionic chip and stunning Retina display.",
       "price": 329,
@@ -284,10 +304,12 @@
         "screen": "10.2-inch Retina",
         "chip": "A13 Bionic"
       },
-      "tags": ["Bestseller"]
+      "tags": [
+        "Bestseller"
+      ]
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Apple iPad Pro",
       "description": "The iPad Pro is the ultimate iPad experience, powered by the M2 chip with a Liquid Retina XDR display.",
       "price": 1099,
@@ -307,10 +329,13 @@
         "screen": "12.9-inch Liquid Retina XDR",
         "chip": "Apple M2"
       },
-      "tags": ["New Arrival", "Featured Products"]
+      "tags": [
+        "New Arrival",
+        "Featured Products"
+      ]
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Apple iPhone 14 Pro 512GB Gold",
       "description": "iPhone 14 Pro with 512GB storage in a stunning Gold finish, featuring Dynamic Island, 48MP Main camera, and A16 Bionic chip.",
       "price": 1499,
@@ -330,10 +355,13 @@
         "screen": "6.1-inch Super Retina XDR",
         "chip": "A16 Bionic"
       },
-      "tags": ["Bestseller", "Featured Products"]
+      "tags": [
+        "Bestseller",
+        "Featured Products"
+      ]
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Apple iPhone 14 Pro 1TB Gold",
       "description": "The ultimate iPhone experience with 1TB storage, ideal for professionals who need maximum capacity and performance.",
       "price": 1799,
@@ -353,10 +381,13 @@
         "screen": "6.1-inch Super Retina XDR",
         "chip": "A16 Bionic"
       },
-      "tags": ["New Arrival", "Featured Products"]
+      "tags": [
+        "New Arrival",
+        "Featured Products"
+      ]
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Apple iPhone 11 128GB White",
       "description": "iPhone 11 with dual-camera system, A13 Bionic chip, and 128GB storage, available in stunning White.",
       "price": 599,
@@ -376,7 +407,10 @@
         "screen": "6.1-inch Liquid Retina",
         "chip": "A13 Bionic"
       },
-      "tags": ["Featured Products"]
+      "tags": [
+        "Featured Products"
+      ]
     }
-  ]
+  ],
+  "wishlist": []
 }

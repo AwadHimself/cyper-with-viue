@@ -31,8 +31,8 @@ const limitedProducts = computed(() => {
 const fetchProducts = async () => {
   state.loading = true;
   try {
-    const response = await axios.get('/src/api/data.json');
-    state.products = response.data.products;
+    const response = await axios.get('/api/products');
+    state.products = response.data;
     await new Promise(resolve => setTimeout(resolve, 1500))
   } catch (error) {
     console.error('Failed to fetch banners:', error)

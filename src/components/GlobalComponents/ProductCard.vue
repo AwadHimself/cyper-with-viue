@@ -1,9 +1,31 @@
 <script setup>
-import { reactive , defineProps } from 'vue';
-import { Skeleton } from 'primevue';
+import { reactive, defineProps, onMounted, computed  } from 'vue'
+import { Skeleton } from 'primevue'
+import { useToast } from 'primevue/usetoast'
+import axios from 'axios'
 
+const toast = useToast()
 
-const props =  defineProps({
+const Added = () => {
+  toast.add({
+    severity: 'success',
+    summary: 'Added to Wishlist',
+    detail: 'The product has been added to your wishlist ❤️',
+    life: 3000,
+    closable: true,
+  })
+}
+const Removed = () => {
+  toast.add({
+    severity: 'error',
+    summary: 'Removed from Wishlist',
+    detail: 'The product has been removed from your wishlist 💔',
+    life: 3000,
+    closable: true,
+  })
+}
+
+const props = defineProps({
   product: {
     type: Object,
     required: true,
@@ -11,43 +33,127 @@ const props =  defineProps({
   loading: {
     type: Boolean,
     default: true,
-  }
+  },
 })
+
 
 const state = reactive({
-  wWishList : false
+  wWishList: false,
+  wishlist: [],
 })
 
-const LikeTogle = ()=>{
-  state.wWishList = !state.wWishList
+const getWishlist = async () => {
+
+  try {
+    const response = await axios.get('/api/wishlist')
+    state.wishlist = response.data
+  } catch (error) {
+    console.error('Error fetching wishlist:', error)
+  }
 }
+
+const addToWishlist = async () => {
+  const product = {
+    id: props.product.id,
+    name: props.product.name,
+  }
+  try {
+    if (!state.wishlist.some((item) => item.productId === product.id)) {
+      await axios.post('/api/wishlist', product)
+      Added()
+      state.wishlist.push( product )
+      state.wWishList = true
+    }
+  } catch (error) {
+    console.error('Error adding to wishlist:', error)
+    toast.add({
+      severity: 'error',
+      summary: 'Error',
+      detail: 'There was an error adding the product to your wishlist!',
+      life: 3000,
+    })
+  }
+}
+
+
+
+const removeFromWishlist = async () => {
+  const product = {
+    id: props.product.id,
+    name: props.product.name,
+  }
+
+  try {
+      await axios.delete(`/api/wishlist/${product.id}`);
+      Removed();
+      getWishlist();
+      state.wWishList = false;
+  } catch (error) {
+    console.error('Error removing from wishlist:', error);
+    toast.add({
+      severity: 'error',
+      summary: 'Error',
+      detail: 'There was an error removing the product from your wishlist!',
+      life: 3000,
+    });
+  }
+}
+
+
+const isProductInWishlist = computed(() => {
+  return state.wishlist.some((item) => item.id === props.product.id)
+})
+
+const LikeTogle = async (event) => {
+  event.preventDefault()
+  event.stopPropagation()
+
+  if (isProductInWishlist.value) {
+    await removeFromWishlist(event)
+  } else {
+    await addToWishlist(event)
+  }
+}
+onMounted(() => {
+  getWishlist()
+})
 </script>
 
 <template>
   <div class="prod-card py-6 px-4 flex flex-col gap-4 items-center w-fit justify-self-center">
-    <div class="flex justify-end w-full icon" >
-      <img v-if="!state.wWishList" @click="LikeTogle" src="../../assets/icons/CategoryIcons/like.png" class=" cursor-pointer" alt="" />
-      <img v-else  @click="LikeTogle" src="../../assets/icons/CategoryIcons/liked.png" class=" cursor-pointer" alt="" />
+    <div class="flex justify-end w-full icon">
+      <button v-if="!isProductInWishlist" @click="LikeTogle" type="button">
+        <img src="../../assets/icons/CategoryIcons/like.png" class="cursor-pointer" alt="" />
+      </button>
+      <button v-else @click="LikeTogle" type="button">
+        <img src="../../assets/icons/CategoryIcons/liked.png" class="cursor-pointer" alt="" />
+      </button>
     </div>
     <div>
-      <img :src="props.product.thumbnail" style="width: 160px; height: 190px" v-if="!props.loading"  />
-      <Skeleton v-else width="10rem" height="11.875rem" ></Skeleton>
+      <img
+        :src="props.product.thumbnail"
+        style="width: 160px; height: 190px"
+        v-if="!props.loading"
+      />
+      <Skeleton v-else width="10rem" height="11.875rem" />
     </div>
     <div>
-      <p  v-if="!props.loading"  class="title flex justify-center items-center">{{ props.product.name }}</p>
-      <div  v-else class="flex flex-col items-center gap-1">
-        <Skeleton width="10rem" height=".5em" ></Skeleton>
-        <Skeleton width="8rem" height=".5rem" ></Skeleton>
-        <Skeleton width="4rem" height=".5rem" ></Skeleton>
+      <p v-if="!props.loading" class="title flex justify-center items-center">
+        {{ props.product.name }}
+      </p>
+      <div v-else class="flex flex-col items-center gap-1">
+        <Skeleton width="15rem" height=".7em" />
+        <Skeleton width="10rem" height=".7rem" />
+        <Skeleton width="5rem" height=".7rem" />
       </div>
     </div>
     <div>
-      <p v-if="!props.loading"  class="price">{{ props.product.price }}$</p>
-      <Skeleton v-else width="8rem" height="1.5em" ></Skeleton>
+      <p v-if="!props.loading" class="price">{{ props.product.price }}$</p>
+      <Skeleton v-else width="8rem" height="1.5em" />
     </div>
     <div>
       <button v-if="!props.loading" class="buy-now">Buy Now</button>
-      <Skeleton v-else width="12rem" height="2.2em" ></Skeleton>
+      <Skeleton v-else width="12rem" height="2.2em" />
     </div>
   </div>
 </template>
@@ -58,7 +164,7 @@ const LikeTogle = ()=>{
   --p-skeleton-animation-background: rgb(121 114 114 / 40%);
   border-radius: 9px;
   background: #f6f6f6;
-  .title{
+  .title {
     color: var(--Main-Black, #000);
     height: 48px;
     width: 236px;
@@ -69,7 +175,7 @@ const LikeTogle = ()=>{
     font-weight: 600;
     line-height: 24px; /* 150% */
   }
-  .price{
+  .price {
     color: var(--Main-Black, #000);
     text-align: center;
     font-family: Inter;

@@ -8,8 +8,8 @@ const state = reactive({
 })
 const fetchCategories = async () => {
   try {
-    const res = await axios.get('/src/api/data.json')
-    state.categories = res.data.categories
+    const response = await axios.get('/api/categories')
+    state.categories = response.data
   } catch (error) {
     console.error('Failed to fetch banners:', error)
 

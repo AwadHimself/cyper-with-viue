@@ -9,13 +9,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
-library.add(fas , far)
+import ToastService from 'primevue/toastservice';
 import Aura from '@primeuix/themes/aura';
+
+library.add(fas, far)
+
 const app = createApp(App)
 
 
 app.use(PrimeVue, {
-    // Default theme configuration
     theme: {
         preset: Aura,
         options: {
@@ -24,15 +26,19 @@ app.use(PrimeVue, {
             cssLayer: false
         }
     }
- });
+});
 
 
+app.use(ToastService);
 
 
+app.use(createPinia());
 
-app.use(createPinia())
-app.component('font-awesome-icon', FontAwesomeIcon)
-app.use(router , PrimeVue)
 
-app.mount('#app')
+app.use(router);
 
+
+app.component('font-awesome-icon', FontAwesomeIcon);
+
+
+app.mount('#app');
