@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <router-link :to="`/${Category.name.toLowerCase()}`">
+  <router-link :to="`/${Category.name}`">
     <div
       class="category-card flex flex-col justify-center items-center gap-4 py-6 px-12 max-sm:w-32"
     >

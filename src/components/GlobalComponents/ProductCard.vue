@@ -142,7 +142,7 @@ onMounted(() => {
       <Skeleton v-else width="8rem" height="1.5em" />
     </div>
     <div>
-      <routerLink :to="`/${product.category}/${product.id}`" v-if="!props.loading" class="buy-now ">Buy Now</routerLink>
+      <routerLink :to="`/${product.category}/${product.name}`" v-if="!props.loading" class="buy-now ">Buy Now</routerLink>
       <Skeleton v-else width="12rem" height="2.2em" />
     </div>
   </div>

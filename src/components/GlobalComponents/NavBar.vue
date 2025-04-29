@@ -19,9 +19,9 @@ const toggleMenu = () => {
       <div :class="['links', { 'active': isMenuOpen }] ">
         <ul class=" flex gap-10 ">
           <router-link to="/" active-class="active">Home</router-link>
-          <router-link to="/about" active-class="active">About</router-link>
-          <router-link to="/contactus" active-class="active">Contact Us</router-link>
-          <router-link to="blog" active-class="active">Blog</router-link>
+          <router-link to="/about/1" active-class="active">About</router-link>
+          <router-link to="/contactus/1" active-class="active">Contact Us</router-link>
+          <router-link to="blog1/" active-class="active">Blog</router-link>
         </ul>
       </div>
       <div class="icons hidden min-lg:block ">

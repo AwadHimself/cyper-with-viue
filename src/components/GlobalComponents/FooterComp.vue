@@ -4,8 +4,8 @@
 
 <template>
   <footer class="flex justify-center  bg-black ">
-    <div class="container px-10 py-24 flex flex-col gap-6 ">
-      <div class="flex flex-col  gap-6">
+    <div class="container px-10 py-24 flex flex-col  ">
+      <div class="flex flex-col   gap-8 md:gap-6">
         <div class="info flex justify-between flex-wrap gap-12">
           <div class="about flex flex-col gap-6 items-center md:items-start text-center md:text-start">
             <img src="../../assets/LogoFooter.svg" class="w-fit" alt="">
