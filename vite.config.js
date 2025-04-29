@@ -13,12 +13,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
-    hmr: false,
     port: 5173,
-    watch: {
-      usePolling: false,
-      ignored: ['*.json', '**/node_modules/**' , '**/dist/**']
-    },
     proxy: {
       '/api': {
         target: 'http://localhost:5000',

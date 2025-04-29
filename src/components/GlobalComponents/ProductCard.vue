@@ -142,7 +142,7 @@ onMounted(() => {
       <Skeleton v-else width="8rem" height="1.5em" />
     </div>
     <div>
-      <routerLink :to="`/${product.category}/${product.id}`" v-if="!props.loading" class="buy-now  ">Buy Now</routerLink>
+      <routerLink :to="`/${product.category}/${product.id}`" v-if="!props.loading" class="buy-now ">Buy Now</routerLink>
       <Skeleton v-else width="12rem" height="2.2em" />
     </div>
   </div>
@@ -164,7 +164,13 @@ onMounted(() => {
     font-style: normal;
     font-weight: 600;
     line-height: 24px; /* 150% */
-    @media (width <= 768px) {
+    @media (width <= 1115px) {
+      &{
+        width: 150px;
+        height: 48px;
+      }
+    }
+    @media (width <= 420px) {
       &{
         width: 139.5px;
         height: 48px;
@@ -191,7 +197,7 @@ onMounted(() => {
     gap: 8px;
     border-radius: 8px;
     background: var(--Main-Black, #000);
-    @media (width <= 768px) {
+    @media (width <= 420px) {
       &{
         width: 139.5px;
       }
@@ -200,7 +206,7 @@ onMounted(() => {
   .ProductImg{
     width: 160px;
     height: 190px;
-    @media (width <= 768px) {
+    @media (width <= 420px) {
       &{
         width: 104px;
         height: 104px;
